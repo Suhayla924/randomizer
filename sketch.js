@@ -32,7 +32,7 @@ let animating = false;
 function setup() {
   createCanvas(600, 600);
   background(150);
-  textSize(35);
+  textSize(35, color(random(255)));
 
   text("click to randomize", 50, 50);
 
@@ -42,7 +42,9 @@ function setup() {
 function draw() {
 
   if (animating == true) {
-    ellipse(random(width), random(height), random(25, 200))
+    stroke(random(width), random(height), random(25, 200))
+    fill(random(255))
+    ellipse(random(width), random(height), random(255))
 
   }
 }
@@ -51,16 +53,16 @@ function randomizer() {
   animation = false;
   if (parks[0]) {
     //displays random name and splices it out of the array list
-    background(random(80, 255));
+    background(random(80, 150));
     randomIndex = int(random(parks.length));
     text(`${parks[randomIndex].name}'s favorite color is
-    ${parks[randomIndex].color}`, 100, 100);
+    ${parks[randomIndex].color}`, 100, 200);
     //text(parks[randomIndex].name + "'s favorite color is" +
     //parks[randomIndex].color, 50, 50);
     parks.splice(randomIndex, 1);
   } else {
-    background(random(80, 255));
-    text("nothing left!", 50, 50);
+    background(random(80, 150));
+    text("nothing left!", 100, 200);
   }
 }
 
