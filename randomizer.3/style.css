@@ -1,12 +1,33 @@
+h1{
+  font-family: Geneva;
+  font-size: 30pt;
+  text-align: left;
+  margin-left: .4in;
+  margin-right: .4in;
+}
 html, body {
-  background-color: green;
+  background-color: #80B048;
   margin: 0;
   padding: 0;
+  align-content: center;
 }
 canvas {
   display: block;
+  margin: 1in;
 }
 
 .pink{
-  color:	#7FFF00;
+  color:	#000000;
+  font-family: Geneva;
+  font-size: 15pt;
+  text-align: left;
+  margin-left: .4in;
+  margin-right: .4in;
+}
+
+.randomizerButton{
+  align-items: center;
+  padding: 20px;
+  background-color:#7DF0E0;
+  color: blue;
 }
