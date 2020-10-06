@@ -27,14 +27,14 @@ let parks = [{
 
 let randomIndex;
 let animating = false;
-let dinosaur = [];
+let dinosaurs = [];
 
 //image function "preload", declare a variable for the images//
 function preload() {
 
   //create an array for the list of images//
   for (let i = 0; i <= 5; i++){
-    dinosaur[i] = loadImage("assets/dinosaur_"+ i +".png")
+    dinosaurs[i] = loadImage(`assets/dinosaur_${i}.png`)
     //"i is the variable number" ALT way of writing the code (`assets/troll_${i}.JPG`)//
   }
 
