@@ -1,6 +1,7 @@
 h1{
+  color: green;
   font-family: Geneva;
-  font-size: 30pt;
+  font-size: 35pt;
   text-align: left;
   margin-left: .4in;
   margin-right: .4in;
@@ -9,11 +10,18 @@ html, body {
   background-color: #80B048;
   margin: 0;
   padding: 0;
+  align-items: center;
+  alignment: center;
   align-content: center;
 }
 canvas {
   display: block;
-  margin: 1in;
+  margin-left: 2in;
+  margin-bottom: 1in;
+  border: 1in;
+  border-color: green;
+  border-width: medium;
+  border-style: groove;
 }
 
 .pink{
@@ -27,6 +35,7 @@ canvas {
 
 .randomizerButton{
   align-items: center;
+  margin-left: 5in;
   padding: 20px;
   background-color:#7DF0E0;
   color: blue;

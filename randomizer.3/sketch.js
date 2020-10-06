@@ -7,10 +7,10 @@ let parks = [{
   color: "rusty"
 }, {
   name: "sequioa",
-  color: "foresty"
+  color: "blue"
 }, {
-  name: "DUNE",
-  color: "sandy"
+  name: "John Muir",
+  color: "olive"
 }, {
   name: "bryce",
   color: "orangey"
@@ -23,6 +23,12 @@ let parks = [{
 }, {
   name: "Yosemite",
   color: "snowy"
+},{
+  name: "Serria",
+  color: "steel"
+},{
+  name: "Tahoe",
+  color: "violet"
 }];
 
 let randomIndex;
@@ -35,7 +41,7 @@ let button;
 function preload() {
 
   //create an array for the list of images//
-  for (let i = 0; i <= 5; i++) {
+  for (let i = 0; i <= 8; i++) {
     dinosaurs[i] = loadImage("assets/dinosaur_" + i + ".png")
     //"i is the variable number" ALT way of writing the code (`assets/troll_${i}.JPG`)//
   }
@@ -49,7 +55,7 @@ function setup() {
   textSize(35, color(random(255)));
   textAlign(CENTER);
   imageMode(CENTER);
-  frameRate(5);
+  frameRate(7);
 
   text("click to randomize", 50, 50, width / 2, height / 2);
   console.log(dinosaurs);
