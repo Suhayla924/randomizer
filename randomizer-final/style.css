@@ -7,7 +7,7 @@ h1{
   margin-left: .4in;
   margin-right: .4in;
 }
-h1{
+h2{
   color: #331E1C;
   font-family: Courier New;
   font-size: 35pt;
@@ -17,7 +17,7 @@ h1{
   margin-right: .4in;
 }
 html, body {
-  background-color: #FFDCD8;
+  background-image:url("bg.PNG");
   margin: 0;
   padding: 0;
   align-items: center;
