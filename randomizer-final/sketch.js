@@ -5,7 +5,7 @@ let fruits = [];
 let imageCounter = 0;
 let button;
 let cnv;
-let cnvText;
+
 
 //image function "preload", declare a variable for the images//
 function preload() {
@@ -22,8 +22,10 @@ function setup() {
   cnv = createCanvas(850, 700);
   cnv.parent("#canvasDiv");
   background(201, 249, 255);
-  //textSize(35, color(random(255)));
-  //  textAlign(CENTER);
+  textSize(20, color(51, 28, 28));
+  textFont('Courier new');
+  textStyle(BOLD);
+  textAlign(CENTER);
   imageMode(CENTER);
   frameRate(7);
 
@@ -41,7 +43,7 @@ function draw() {
 
   if (animating == true) {
     clear();
-    image(fruits[imageCounter], width / 2, height / 2);
+    image(fruits[imageCounter], width / 2, height / 2.5);
 
     if (imageCounter < fruits.length) {
       imageCounter++;
@@ -62,12 +64,12 @@ function randomizer() {
     today!`, 410, 600);
 
 
-    image(random(fruits), width / 2, height / 2);
+    image(random(fruits), width / 2, height / 2.5);
     //text(parks[randomIndex].name + "'s favorite color is" +
     //parks[randomIndex].color, 50, 50);
     tasks.splice(randomIndex, 1);
   } else {
-    background(random(80, 150));
+    background(random(80,80, 150));
     text("Refresh the page for more!", 200, 200, width / 2, height / 2);
   }
 }
