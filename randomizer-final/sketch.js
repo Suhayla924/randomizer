@@ -21,7 +21,7 @@ function setup() {
   cnv = createCanvas(850, 700);
   cnv.parent("#canvasDiv");
   background(201, 249, 255);
-  textSize(20, color(51, 28, 28));
+  textSize(22, color(51, 28, 28));
   textFont('Courier new');
   textStyle(BOLD);
   textAlign(CENTER);
