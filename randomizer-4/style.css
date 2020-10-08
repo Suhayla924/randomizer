@@ -1,13 +1,14 @@
 h1{
-  color: green
-  font-family: Geneva;
+  color: #331E1C;
+  font-family: Courier New;
   font-size: 35pt;
   text-align: left;
+    text-shadow: 2px 2px #7DF0E0;
   margin-left: .4in;
   margin-right: .4in;
 }
 html, body {
-  background-color: #80B048;
+  background-color: #FFDCD8;
   margin: 0;
   padding: 0;
   align-items: center;
@@ -16,17 +17,15 @@ html, body {
 }
 canvas {
   display: block;
-  margin-left: 2in;
-  margin-bottom: 1in;
-  border: 1in;
-  border-color: green;
-  border-width: medium;
+  border: auto;
+  border-color: #7DF0E0;
+  border-width: 8px;
   border-style: groove;
 }
 
 .pink{
-  color:	#000000;
-  font-family: Geneva;
+  color:	#331E1C;
+  font-family: Courier New;
   font-size: 15pt;
   text-align: left;
   margin-left: .4in;
@@ -34,9 +33,21 @@ canvas {
 }
 
 .randomizerButton{
-  align-items: center;
-  margin-left: 5in;
+  font-family: Courier New;
+  font-style: oblique;
+  margin-left: 70px;
   padding: 20px;
   background-color:#7DF0E0;
   color: blue;
+  border: 15px;
+  border-style: double;
+}
+.row {
+  margin: 50px;
+  display: flex;
+}
+
+.column {
+  margin:10px;
+  flex: 50%;
 }
