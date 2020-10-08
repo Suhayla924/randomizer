@@ -1,4 +1,3 @@
-fruits
 
 let randomIndex;
 let animating = false;
@@ -13,7 +12,7 @@ function preload() {
 
   //create an array for the list of images//
   for (let i = 0; i <= 11; i++) {
-    fruits[i] = loadImage("assets/fruit_" + i + ".png")
+    fruits[i] = loadImage("fruits/fruit_" + i + ".png")
     //"i is the variable number" ALT way of writing the code (`assets/troll_${i}.JPG`)//
   }
 
