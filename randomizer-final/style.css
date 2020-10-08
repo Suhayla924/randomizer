@@ -1,23 +1,25 @@
-h1{
+h1 {
   color: #331E1C;
   font-family: Courier New;
-  font-size: 35pt;
+  font-size: 45pt;
   text-align: left;
-    text-shadow: 3px 2px #7DF0E0;
+  text-shadow: 3px 2px #7DF0E0;
   margin-left: .4in;
   margin-right: .4in;
 }
-h1{
+
+h2 {
   color: #331E1C;
   font-family: Courier New;
-  font-size: 35pt;
+  font-size: 25pt;
   text-align: left;
-    text-shadow: 3px 2px #7DF0E0;
+  text-shadow: 3px 2px #7DF0E0;
   margin-left: .4in;
   margin-right: .4in;
 }
+
 html, body {
-  background-image: url("bg.png")
+  background-image: url("bg.png");
   background-color: #FFDCD8;
   margin: 0;
   padding: 0;
@@ -25,6 +27,7 @@ html, body {
   alignment: center;
   align-content: center;
 }
+
 canvas {
   display: block;
   border: auto;
@@ -33,31 +36,38 @@ canvas {
   border-style: groove;
 }
 
-.pink{
-  color:	#331E1C;
+.pink {
+  background-color: white;
+  color: #331E1C;
   font-family: Courier New;
   font-size: 15pt;
   text-align: left;
+  padding: 20px;
   margin-left: .4in;
   margin-right: .4in;
+  border: auto;
+  border-color: #7DF0E0;
+  border-width: 8px;
+  border-style: groove;
 }
 
-.randomizerButton{
+.randomizerButton {
   font-family: Courier New;
   font-style: oblique;
   margin-left: 70px;
   padding: 20px;
-  background-color:#7DF0E0;
+  background-color: #7DF0E0;
   color: #8858cf;
   border: 15px;
   border-style: double;
 }
+
 .row {
   margin: 50px;
   display: flex;
 }
 
 .column {
-  margin:10px;
+  margin: 10px;
   flex: 50%;
 }
