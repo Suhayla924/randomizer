@@ -1,4 +1,3 @@
-
 let randomIndex;
 let animating = false;
 let fruits = [];
@@ -40,10 +39,10 @@ function setup() {
 }
 
 function draw() {
-
   if (animating == true) {
     clear();
     image(fruits[imageCounter], width / 2, height / 2.5);
+    background(201, 249, 255);
 
     if (imageCounter < fruits.length) {
       imageCounter++;
@@ -56,20 +55,24 @@ function draw() {
 }
 
 function randomizer() {
+
   animation = false;
   if (tasks[0]) {
     clear();
     randomIndex = int(random(tasks.length));
+    background(201, 249, 255);
     text(` Let's ${tasks[randomIndex].name} ${tasks[randomIndex].object} and ${tasks[randomIndex].food}
     today!`, 410, 600);
 
 
+
     image(random(fruits), width / 2, height / 2.5);
+
     //text(parks[randomIndex].name + "'s favorite color is" +
     //parks[randomIndex].color, 50, 50);
     tasks.splice(randomIndex, 1);
   } else {
-    background(random(80,80, 150));
+    background(random(80, 80, 150));
     text("Refresh the page for more!", 200, 200, width / 2, height / 2);
   }
 }
