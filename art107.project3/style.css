@@ -1,0 +1,35 @@
+html {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  background-color:  	#b2d582;
+  margin: 100px auto 0 auto;
+  width: 80%;
+  text-align: center;
+  font-family: cursive;
+  padding: 0;
+}
+h1{
+  padding: 15px;
+  text-align: left;
+}
+
+p{
+  background-color: #FDF7EF;
+  border:groove 5px;
+  border-color: green;
+  margin: 10px 90px 10px 90px;
+  padding: 15px;
+}
+
+canvas {
+  margin: auto;
+  top:15px;
+  left:15px;
+  position: center;
+  display: block;
+  border-color:;
+  border: 10px solid #ff9932;
+}
